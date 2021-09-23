@@ -16,21 +16,65 @@
     <div>
         <img src="./Untitled-3.svg" class="w-100" alt="" srcset="">
     </div>
-    <div>
-        <a href="
-        https://docs.google.com/forms/d/e/1FAIpQLScJCpscNmpoAqyRXdgbIS5BNRnsbfXmlKtkE75etAygvBFfbg/viewform" class=" bt btn btn-dark">PARTICIPATE</a>
+    <div class="bg-white text-center mb-5">
+        <a id="link" href="" class=" bt btn btn-dark">PARTICIPATE</a><br>
+        <h6 class="p-5">Link will be active on 8.00 PM 28/07/2021</span>
     </div>
-    <div class="text-center mt-4 mb-5">
+    <div class="text-center mt-2 mb-5">
+        <img src="./Untitled-6.svg" class="w-100 mb-5" alt="" srcset="">
         <a href="http://wa.me/919946160382" class="btn btn-light">Cat 1</a>
         <a href="http://wa.me/918943454720" class="btn btn-light">Cat 2</a>
         <a href="http://wa.me/919496085317" class="btn btn-light">Cat 3</a>
         <a href="http://wa.me/919946092080" class="btn btn-light">Cat 4</a>
+    </div>
+    <div class="container text-center mb-5">
+        <table class="table table-dark table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">Cat</th>
+                    <th scope="col">Age Limit</th>
+                    <th scope="col">Gender</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Class 5-7</td>
+                    <td>Boys/Girls</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Class 8-10</td>
+                    <td>Boys/Girls</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Class 11-Age 20</td>
+                    <td>Boys/Girls</td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>Age 21 & Above</td>
+                    <td>Men</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <script>
+        function deactive() {
+            time = new Date()
+            document.getElementById('link').href = ""
+            if (time.getHours() == 20 && time.getMinutes() >= 0 && time.getMinutes() <= 30) {
+                document.getElementById('link').href = "https://docs.google.com/forms/d/e/1FAIpQLScJCpscNmpoAqyRXdgbIS5BNRnsbfXmlKtkE75etAygvBFfbg/viewform"
+            }
+        }
+        deactive()
+    </script>
 </body>
 
 </html>
